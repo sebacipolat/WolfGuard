@@ -88,7 +88,7 @@ fun Welcome() {
             fontWeight = FontWeight.SemiBold
         ),
         textAlign = TextAlign.Start,
-        modifier = Modifier.padding(top = 15.dp, bottom = 20.dp)
+        modifier = Modifier.padding(top = 15.dp, bottom = 40.dp)
     )
 }
 
