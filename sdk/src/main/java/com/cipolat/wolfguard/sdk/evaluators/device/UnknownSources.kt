@@ -3,9 +3,8 @@ package com.cipolat.wolfguard.sdk.evaluators.device
 import android.content.Context
 import android.os.Build
 import android.provider.Settings
-import com.cipolat.wolfguard.sdk.evaluators.Evaluator
 
-class UnknownSources : Evaluator {
+class UnknownSources {
     fun isEnabled(context: Context): Boolean {
         return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             if (context.packageManager.canRequestPackageInstalls()) return true else false
@@ -16,9 +15,5 @@ class UnknownSources : Evaluator {
                 0
             ) == 1
         }
-    }
-
-    override fun getScore(): Int {
-        return 0
     }
 }

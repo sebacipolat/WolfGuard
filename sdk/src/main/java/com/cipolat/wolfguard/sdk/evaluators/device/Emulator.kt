@@ -1,9 +1,8 @@
 package com.cipolat.wolfguard.sdk.evaluators.device
 
 import android.os.Build
-import com.cipolat.wolfguard.sdk.evaluators.Evaluator
 
-class Emulator : Evaluator {
+class Emulator{
     fun isEmulator(): Boolean {
         return (Build.BRAND.startsWith("generic") && Build.DEVICE.startsWith("generic"))
                 || Build.FINGERPRINT.startsWith("generic")
@@ -22,10 +21,5 @@ class Emulator : Evaluator {
                 || Build.PRODUCT.contains("vbox86p")
                 || Build.PRODUCT.contains("emulator")
                 || Build.PRODUCT.contains("simulator");
-    }
-
-    override fun getScore(): Int {
-        return if (isEmulator()) 1 else
-            0
     }
 }
