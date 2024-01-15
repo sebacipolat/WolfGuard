@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "WolfGuard"
 include(":app")
 include(":sdk")
+include(":wolfguard-sdk")

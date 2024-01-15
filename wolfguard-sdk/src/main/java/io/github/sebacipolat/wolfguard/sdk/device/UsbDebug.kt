@@ -1,4 +1,4 @@
-package com.cipolat.wolfguard.sdk.evaluators.device
+package io.github.sebacipolat.wolfguard.sdk.device
 
 import android.content.Context
 import android.provider.Settings

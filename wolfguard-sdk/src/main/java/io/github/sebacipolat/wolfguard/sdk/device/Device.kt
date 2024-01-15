@@ -1,6 +1,6 @@
-package com.cipolat.wolfguard.sdk.evaluators.device
+package io.github.sebacipolat.wolfguard.sdk.device
 
-import com.cipolat.wolfguard.sdk.evaluators.device.call.Voip
+import io.github.sebacipolat.wolfguard.sdk.device.call.Voip
 
 class Device {
 

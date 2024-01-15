@@ -1,6 +1,6 @@
-package com.cipolat.wolfguard
+package io.github.sebacipolat.wolfguard
 
-import com.cipolat.wolfguard.sdk.evaluators.device.Device
+import io.github.sebacipolat.wolfguard.sdk.device.Device
 
 class WolfGuard private constructor() {
     companion object {

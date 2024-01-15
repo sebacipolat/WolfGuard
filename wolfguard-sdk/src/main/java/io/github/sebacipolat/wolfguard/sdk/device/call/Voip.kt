@@ -1,4 +1,4 @@
-package com.cipolat.wolfguard.sdk.evaluators.device.call
+package io.github.sebacipolat.wolfguard.sdk.device.call
 
 import android.content.Context
 import android.media.AudioManager

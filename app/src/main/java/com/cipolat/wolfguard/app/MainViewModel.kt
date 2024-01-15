@@ -5,7 +5,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import com.cipolat.wolfguard.WolfGuard
+import io.github.sebacipolat.wolfguard.WolfGuard
 
 class MainViewModel(var context: Context) : ViewModel() {
     var state by mutableStateOf(MainState())
