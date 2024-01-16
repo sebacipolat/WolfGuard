@@ -97,9 +97,15 @@ WolfGuard.getInstance().getDevice().voip.isOnCall(context)
 ## Sample App
 There are an sample app to test easily our sdk, just clone the wolfguard repo and open the app project.
 
-
 <img src="/images/screen_1.png"/>
 
+## Demo
+
+| Feature   | Demo | 
+|-----------|------|
+| Voip Call | <img src="/images/voip.gif" align="right" width="320"/>    | 
+| Usb Debug | <img src="/images/usb.gif" align="right" width="320"/>    | 
+|           |      | 
 
 # License
 ```xml
