@@ -23,7 +23,7 @@ In the dynamic landscape of mobile applications, ensuring robust security is par
 > [!NOTE]  
 > This sdk is still in development
 > 
-> See [Versioning](#versioning) section for more information.
+> See [Versioning](#versioning) section for more information. 
 
 
 ## Getting started
