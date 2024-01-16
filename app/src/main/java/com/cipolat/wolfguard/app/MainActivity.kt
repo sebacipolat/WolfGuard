@@ -67,7 +67,7 @@ class MainActivity : ComponentActivity() {
                             text = stringResource(id = R.string.btn_check),
                             style = TextStyle(
                                 fontSize = 18.sp,
-                                color = Black,
+                                color = Color.White,
                                 fontWeight = FontWeight.SemiBold
                             ),
                             textAlign = TextAlign.Start,
