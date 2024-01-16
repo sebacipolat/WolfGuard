@@ -16,6 +16,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -60,7 +61,7 @@ class MainActivity : ComponentActivity() {
                         message = stringResource(id = R.string.voip_call),
                         viewModel.state.isOnVoipCall.value
                     )
-                    Divider(modifier = Modifier.weight(1f))
+                    Divider(modifier = Modifier.weight(1f), color = Color.Transparent)
                     Button(onClick = { viewModel.checkDevice() }) {
                         Text(
                             text = stringResource(id = R.string.btn_check),
