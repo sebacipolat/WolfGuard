@@ -1,32 +1,81 @@
 <p align="center">
 <img src="/images/banner.png"/>
 </p>
-An RASP (Runtime Application Self-Protection) solution for protecting Android apps.
+A RASP (Runtime Application Self-Protection) solution for protecting Android apps.
 </br>
 </br>
 
-[![Kotlin](https://img.shields.io/badge/kotlin-1.8.20-blue)](https://kotlinlang.org/docs/whatsnew1820.html)
+[![Kotlin](https://img.shields.io/badge/kotlin-1.8.10-blue)]()
 [![Android](https://img.shields.io/badge/minAndroidSDK-24-brightgreen)](https://developer.android.com/about/versions/nougat)
 [![Android](https://img.shields.io/badge/targetAndroidSDK-34-brightgreen)](https://developer.android.com/about/versions/14)
-[![Gradle](https://img.shields.io/badge/gradle-8.2.0-green)](https://docs.gradle.org/8.2/release-notes.html)
-[![Maven](https://maven-badges.herokuapp.com/maven-central/com.securevale/rasp-android/badge.svg)](https://search.maven.org/artifact/com.securevale/rasp-android)
-[![last-version](https://img.shields.io/badge/last_version-1.0.2-blue)]
+[![last-version](https://img.shields.io/badge/last_version-1.0.2-blue)]()
 
 </br>
+
+In the dynamic landscape of mobile applications, ensuring robust security is paramount. Adopting a proactive approach to safeguarding Android applications has become imperative in the face of evolving cyber threats
+
+## Features
+* Emulation detection
+* Root Detection
+* Usb Debug detection
+* Vopi Call detection
 
 > [!NOTE]  
 > This sdk is still in development
 > 
 > See [Versioning](#versioning) section for more information.
 
-## Features
-* Emulation detection
-* Root Detection
-* Usb Debug detection
 
-<img src="/images/demo.gif" align="right" width="320"/>
+## Getting started
 
-## Stack
+First ensure that you have defined `mavenCentral` in your Gradle configuration.
+
+```groovy
+repositories {
+    mavenCentral()
+}
+```
+
+Next, add wolfguard as a dependency to your project.
+
+Groovy
+```groovy
+dependencies {
+    implementation 'io.github.sebacipolat:wolfguard-sdk:{version}'
+}
+```
+Kts
+
+```kts
+dependencies {
+    implementation("io.github.sebacipolat:wolfguard-sdk:{version}")
+}
+```
+
+
+## Emulation detection
+
+Do you want to know if your app is running into a emulator?
+
+Get a boolean value with
+
+```kotlin
+WolfGuard.getInstance().getDevice().emulator.isEmulator()
+```
+## Root detection
+
+Do you want to know if your app is running into a root device?
+
+We use rootber https://github.com/scottyab/rootbeer to make these detection
+
+You will need provide an Android context to get a boolean value with
+
+```kotlin
+WolfGuard.getInstance().getDevice().root.isRooted(context)
+```
+
+
+
 - Minimum SDK level 24
 - Kotlin
 - MVVM
