@@ -36,7 +36,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId 'io.github.sebacipolat'
-                version '1.0.0'
+                version VERSION_NAME
                 pom {
                     name = artifactId
                     description = POM_DESCRIPTION
