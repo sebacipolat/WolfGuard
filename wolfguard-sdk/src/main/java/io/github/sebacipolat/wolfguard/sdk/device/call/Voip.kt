@@ -5,6 +5,8 @@ import android.media.AudioManager
 
 class Voip {
     /**
+     *Let you known if there are an active voice call over voip,
+     *like whatsapp call, skype, etc
      *@param context:Context Android context
      *@return boolean
      */

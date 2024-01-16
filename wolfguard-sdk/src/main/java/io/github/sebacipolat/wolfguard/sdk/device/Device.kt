@@ -3,7 +3,6 @@ package io.github.sebacipolat.wolfguard.sdk.device
 import io.github.sebacipolat.wolfguard.sdk.device.call.Voip
 
 class Device {
-
     var emulator = Emulator()
         private set
     var root = Root()

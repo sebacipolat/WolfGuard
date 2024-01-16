@@ -7,10 +7,8 @@ import com.scottyab.rootbeer.RootBeer
  * Root Detectton helper
  */
 class Root {
-
     /**
-     * isRooted
-     * Tells if the device has rooted enabled
+     * Returns if applications is running on a root device
      * @param context: Android Context
      * @return boolean
      */
