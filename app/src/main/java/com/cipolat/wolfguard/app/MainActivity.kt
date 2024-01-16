@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
+import androidx.compose.material3.Divider
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -59,7 +60,7 @@ class MainActivity : ComponentActivity() {
                         message = stringResource(id = R.string.voip_call),
                         viewModel.state.isOnVoipCall.value
                     )
-
+                    Divider(modifier = Modifier.weight(1f))
                     Button(onClick = { viewModel.checkDevice() }) {
                         Text(
                             text = stringResource(id = R.string.btn_check),
