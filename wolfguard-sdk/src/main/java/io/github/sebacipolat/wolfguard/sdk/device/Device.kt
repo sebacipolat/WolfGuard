@@ -7,8 +7,6 @@ class Device {
         private set
     var root = Root()
         private set
-    var unknownSources = UnknownSources()
-        private set
     var usbDebug = UsbDebug()
         private set
     var voip = Voip()
