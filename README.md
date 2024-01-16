@@ -62,6 +62,7 @@ Get a boolean value with
 ```kotlin
 WolfGuard.getInstance().getDevice().emulator.isEmulator()
 ```
+
 ## Root detection
 
 Do you want to know if your app is running into a root device?
@@ -74,7 +75,24 @@ You will need provide an Android context to get a boolean value with
 WolfGuard.getInstance().getDevice().root.isRooted(context)
 ```
 
+## Usb Debug mode detection
 
+Do you want to know if your app is running into a device with the usdb debug mode enabled?
+
+You will need provide an Android context to get a boolean value with
+
+```kotlin
+WolfGuard.getInstance().getDevice().usbDebug.isEnabled(context)
+```
+## Voip Call detection
+
+Do you want to know if your app is running into a device with an active voip call, like whatsapp, skype?
+
+You will need provide an Android context to get a boolean value with
+
+```kotlin
+WolfGuard.getInstance().getDevice().voip.isOnCall(context)
+```
 
 - Minimum SDK level 24
 - Kotlin
