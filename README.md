@@ -109,7 +109,7 @@ There are an sample app to test easily our sdk, just clone the wolfguard repo an
 
 # License
 ```xml
-Designed and developed by 2023 Sebastian Cipolat
+Designed and developed by 2024 Sebastian Cipolat
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
