@@ -18,5 +18,8 @@ class WolfGuard private constructor() {
             }
     }
 
+    /**
+     * Get Device Instance
+     */
     fun getDevice() = device
 }

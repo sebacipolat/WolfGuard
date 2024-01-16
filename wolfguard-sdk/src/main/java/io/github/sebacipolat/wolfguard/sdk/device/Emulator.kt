@@ -2,7 +2,14 @@ package io.github.sebacipolat.wolfguard.sdk.device
 
 import android.os.Build
 
+/**
+ *Emulator helper class
+ */
 class Emulator{
+    /**
+     * Returns if applications is running on emulator
+     * @return boolean
+     */
     fun isEmulator(): Boolean {
         return (Build.BRAND.startsWith("generic") && Build.DEVICE.startsWith("generic"))
                 || Build.FINGERPRINT.startsWith("generic")
